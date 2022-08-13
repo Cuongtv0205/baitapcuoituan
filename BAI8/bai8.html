@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhap a la duong dan anh,
+        b la so luong can in.
+        In ra b anh co duong la a</title>
+</head>
+<body>
+<h3 id="anh1"></h3>
+<script>
+    let a = prompt('Đường dẫn ảnh a :')
+    let b = +prompt('Số lượng cần in :')
+    for (let i = 1;i <=b;i++){
+        document.getElementById("anh1").innerHTML += '<img src=" ' + a + ' " alt="Anhloi" >' + b + '<br>';
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh tổng các số từ a đến b</title>
+</head>
+<body>
+<input type="text" id="ok1">
+<input type="text" id="ok2">
+<button type="button" onclick="andi()">Tinhtong</button>
+<p id="Hienthi"></p>
+<script>
+    function andi() {
+        let a = +document.getElementById('ok1').value;
+        let b = +document.getElementById('ok2').value;
+        let Tong = 0
+        for (let i = a; i <= b; i++){
+            Tong = Tong+i;
+        }document.getElementById('Hienthi').innerHTML = Tong;
+    }
+</script>
+</body>
+</html>

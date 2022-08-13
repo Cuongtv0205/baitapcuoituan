@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra cac so chia 7 du 4 tu a den b</title>
+</head>
+<body>
+<input type="text" id="ok1">
+<input type="text" id="ok2">
+<button type="button"onclick="kich()" value="a">KICH</button>
+<h3 id="Hien thi"></h3>
+<script>
+    function kich() {
+        let a = +document.getElementById('ok1').value;
+        let b = +document.getElementById('ok2').value;
+        for (let i = a; i <= b; i++) {
+            if (i % 7 == 4) {
+                document.getElementById("Hien thi").innerHTML += i + '<br>';
+            }
+        }
+    }
+</script>
+</body>
+</html>

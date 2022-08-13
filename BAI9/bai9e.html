@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập a,b nếu a>b:in ra tích a*b,
+        b>a : in tích từ den b</title>
+</head>
+<body>
+<input type="text" id="ok1">
+<input type="text" id="ok2">
+<button type="button" onclick="ham()">Click</button>
+<h3 id="demo"></h3>
+<script>
+    function ham() {
+        let a = +document.getElementById('ok1').value;
+        let b = +document.getElementById('ok2').value;
+        let T = 1;
+        if (a > b) {
+            document.getElementById('demo').innerHTML = (a * b);
+        }
+        if (a < b) {
+            for (; a <= b; a++) {
+                T = T * a;
+            }
+            document.getElementById('demo').innerHTML = T;
+        }
+    }
+</script>
+</body>
+</html>

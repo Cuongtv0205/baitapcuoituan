@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm các số chia 7 dư 4</title>
+</head>
+<body>
+<input type="text"id="ok1">
+<input type="text"id="ok2">
+<button type="button"onclick="AN()">Click vào</button>
+<h3 id ="hienthi"></h3>
+<script>
+    function AN() {
+        let a = +document.getElementById('ok1').value;
+        let b = +document.getElementById('ok2').value;
+        let dem = 0;
+        for (let i = a; i <= b; i++) {
+            if (i % 7 == 4) {
+                dem = dem +1;
+            }
+        }document.getElementById('hienthi').innerHTML = dem;
+    }
+</script>
+</body>
+</html>
