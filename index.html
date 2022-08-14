@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ấn nút vào ô input hiển thì nút vừa ấn lên màn hình. 2. Hiển thì lên thẻ h1</title>
+</head>
+<input type="text"id="demo">
+<button type="button"onclick="NA()">Click</button>
+<button type="button"onclick="HH()">Click đi</button>
+<h1 id="ok"></h1>
+<script>
+  // function NA(){
+  //   alert(document.getElementById('demo').value);
+  // }
+  function HH(){
+ document.getElementById('ok').innerHTML = document.getElementById('demo').value;
+  }
+</script>
+<body>
+</body>
+</html>
